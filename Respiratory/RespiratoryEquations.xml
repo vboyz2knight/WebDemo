@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Equations>
+  <!--All equations need to be in  (equation) and no spaces-->
+  <resp>
+    <abbreviation>PAO2</abbreviation>
+    <id>partial pressure of alveolar gas</id>
+    <description> Used in assessing if the lungs are properly transferring oxygen into the blood.</description>
+    <equation>((Pb-Ph20)*FIO2-(PaCO2/0.8))</equation>
+  </resp>
+
+  <resp>
+    <abbreviation>A-aDO2</abbreviation>
+    <id>A-a Gradient</id>
+    <description> Measures the difference between alveolar and arterial PO2. 25-65 mmHg Normal: 66-300 mHG V/Q mismatch: >300 mmHG Shunting</description>
+    <equation>(AlveolarPAO2-ArterialPO2)</equation>
+  </resp>
+
+  <resp>
+    <abbreviation>CaO2</abbreviation>
+    <id>Arterial Oxygen Content</id>
+    <description> Best measurement of oxygen delivered to the tissues. Normal value 17-20 vol % (mL/dl)</description>
+    <equation>((Hb*1.34*SaO2)+(PaO2*.003))</equation>
+  </resp>
+
+  <resp>
+    <abbreviation>CvO2</abbreviation>
+    <id>Mixed venous oxygen content</id>
+    <description> Total amount of oxygen carried in mixed venous blood. Normal value 12-16 vol %</description>
+    <equation>((Hb*1.34*SvO2)+(PvO2*.003)))</equation>
+  </resp>
+
+  <resp>
+    <abbreviation>C(a-v)O2</abbreviation>
+    <id>Arterial-venous oxygen content difference</id>
+    <description> Measure oxygen consumption of tissues. Normal value 4-5 vol %</description>
+    <equation>(CaO2-CvO2)</equation>
+  </resp>
+
+  <resp>
+    <abbreviation>Qt</abbreviation>
+    <id>Cardiac output</id>
+    <description> Fick equation. Normal value 4-8 L/min.</description>
+    <equation>(VO2/((CaO2-CvO2)*10))</equation>
+  </resp>
+
+  <resp>
+    <abbreviation>Qs/Qt</abbreviation>
+    <id>Shunt equation</id>
+    <description> Portion of cardiac output that is shunted. Normal value 3-5%</description>
+    <equation>((AaGradient*.003)/(AaGradient*.003+(CaO2-CvO2)))</equation>
+  </resp>
+
+  <resp>
+    <abbreviation>Vd/Vt</abbreviation>
+    <id>Deadspace to tidal volume ratio</id>
+    <description> Percentage of tidal volumme that is deadspace. Normal value 20-40% </description>
+    <equation>(((PaCo2-PECO2)/PaCo2)*100)</equation>
+  </resp>
+</Equations>

@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SQLS>
+  <SQL>
+    <Command>
+      CREATE DATABASE
+    </Command>
+    <Descriptions>
+      Create a Database to hold all your tables
+    </Descriptions>
+
+    <example>CREATE DATABASE my_list;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      USE
+    </Command>
+    <Descriptions>
+      Use a database
+    </Descriptions>
+
+    <example>USE my_list;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      CREATE TABLE
+    </Command>
+    <Descriptions>
+      create a table
+    </Descriptions>
+
+    <example>CREATE TABLE doughnut_list( doughnut_name VARCHAR(10),doughnut_create DATE,doughnut_price DEC(5,2) );</example>
+    <example>Common datatypes: CHAR, VARCHAR, BLOB, INT, DEC(5,2), DATE, DATETIME</example>
+    <example>CREATE TABLE doughnut_list( doughnut_name VARCHAR(10) NOT NULL,doughnut_create DATE,doughnut_price DEC(5,2) DEFAULT 0.25 );</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      DESC
+    </Command>
+    <Descriptions>
+      To see how your table look
+    </Descriptions>
+
+    <example>DESC doughnut_list;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      DROP TABLE
+    </Command>
+    <Descriptions>
+      Delete your table and any datas in it
+    </Descriptions>
+
+    <example>DROP TABLE doughnut_list;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      INSERT INTO
+    </Command>
+    <Descriptions>
+      To add data to into your table
+    </Descriptions>
+
+    <example>INSERT INTO doughnut_list( 'doughnut_name','doughnut_create','doughnut_price' )VALUES ('glazed','06/06/2012',0.50);</example>
+    <example>INSERT INTO doughnut_list VALUES ('glazed','06/06/2012',0.50);</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      SELECT
+    </Command>
+    <Descriptions>
+      To see what datas are in table
+    </Descriptions>
+
+    <example>SELECT * FROM doughnut_list;</example>
+    <example>SELECT doughnut_name FROM doughnut_list WHERE doughnut_price = 1.00;</example>
+    <example>SELECT doughnut_name FROM doughnut_list WHERE doughnut_price = 1.00 AND doughnut_create = '6/21/2012';</example>
+    <example>numeric comparisions: 'lt;', 'gt;' ,'gt;=,'lt;=,'lt;gt;' </example>
+    <example>SELECT doughnut_name FROM doughnut_list WHERE doughnut_price = 1.00 OR doughnut_create = '6/21/2012';</example>
+    <example>SELECT doughnut_name FROM doughnut_list WHERE doughnut_price = 1.00 AND doughnut_create IS NULL;</example>
+    <example>SELECT doughnut_name FROM doughnut_list WHERE doughnut_name LIKE '%op';</example>
+    <example>SELECT doughnut_name FROM doughnut_list WHERE doughnut_name LIKE '_op';</example>
+    <example>SELECT doughnut_name FROM doughnut_list WHERE doughnut_price BETWEEN 1.00 AND 2;</example>
+    <example>SELECT doughnut_name FROM doughnut_list WHERE doughnut_create IN ('6/21/2012','6/15/2012');</example>
+    <example>SELECT doughnut_name FROM doughnut_list WHERE NOT doughnut_price BETWEEN 1.00 AND 2;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      DELETE
+    </Command>
+    <Descriptions>
+      To delete where conditions met. Note DELETE FROM doughnut_list will delete all rows.
+    </Descriptions>
+
+    <example>DELETE FROM doughnut_list where doughnut_create = '6/21/2012';</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      UPDATE
+    </Command>
+    <Descriptions>
+      To update columns where conditions meet
+    </Descriptions>
+
+    <example>UPDATE doughnut_list SET doughnut_name = 'white' WHERE doughnut_name = 'glazed' ;</example>
+    <example>UPDATE doughnut_list SET doughnut_price = doughnut_price + 1; WHERE doughnut_name = 'glazed' or doughnut_name = 'powdered' ;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      Definition of Atomic Data
+    </Command>
+    <Descriptions>
+      Broken down into the smallest pieces of data that can't or shouldn't be divided
+    </Descriptions>
+
+    <example>Rule 1: A column of atomic data can't have several values of the same type of data in that column</example>
+    <example>Rule 2: Can't have multiple of columns with the same type of data</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      Definition of Primary Key
+    </Command>
+    <Descriptions>
+      A column in your table that make each record unique
+    </Descriptions>
+
+    <example>Primary Key can't be NULL, values can't be changed, must be compact, must be given when record is inserted</example>
+    <example>CREATE TABLE doughnut_list( doughnut_id INT NOT NULL AUTO_INCREMENT, doughnut_name VARCHAR(10),doughnut_create DATE,doughnut_price DEC(5,2),PRIMARY KEY(doughnut_id) );e</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      SHOW CREATE TABLE
+    </Command>
+    <Descriptions>
+      See correct syntax for creating an existing table
+    </Descriptions>
+
+    <example>SHOW CREATE TABLE doughnut_list;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      ALTER TABLE
+    </Command>
+    <Descriptions>
+      To alter a table
+    </Descriptions>
+
+    <example>ALTER TABLE doughnut_list ADD COLUMN doughnut_id INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY(doughnut_id);</example>
+    <example>ALTER TABLE doughnut_list ADD COLUMN doughnut_rating INT AFTER doughnut_name;</example>
+    <example>Keywords: AFTER,FIRST,LAST,SECOND,THIRD...</example>
+    <example>ALTER TABLE dough RENAME doughnut_list;</example>
+    <example>ALTER TABLE doughnut_list CHANGE COLUMN id doughnut_id INT NOT NULL AUTO_INCREMENT,ADD PRIMARY KEY(doughnut_id);</example>
+    <example>ALTER TABLE doughnut_list CHANGE COLUMN name doughnut_name VARCHAR(20);</example>
+    <example>ALTER TABLE doughnut_list MODIFY doughnut_name VARCHAR(10);</example>
+    <example>ALTER TABLE doughnut_list DROP COLUMN doughnut_name;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      String Functions
+    </Command>
+    <Descriptions>
+      Handy string functions
+    </Descriptions>
+
+    <example>Select RIGHT(doughnut_name,2) from doughnut_list;</example>
+    <example>Select LEFT(doughnut_name,2) from doughnut_list;</example>
+    <example>Select SUBSTRING_INDEX(doughnut_name,'a',1) from doughnut_list;</example>
+    <example>SUBSTRING(your_string,start_position,length)</example>
+    <example>UPPER(your_String) / LOWER(your_string) / REVERSE(your_string)</example>
+    <example>LTRIM(your_string) / RTRIM(your_string) / LENGTH(your_String)</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      CASE
+    </Command>
+    <Descriptions>
+      Combine all the UPDATE statements by checking an existing column's value against a condition
+    </Descriptions>
+
+    <example>UPDATE my_table SET new_column = CASE WHEN column1 = somevalue1 THEN newvalue1 WHEN column2 = somevalue2 THEN newvalue2 ELSE newvalue3 END;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      ORDER BY
+    </Command>
+    <Descriptions>
+      Order the data by
+    </Descriptions>
+
+    <example>Select doughnut_name FROM doughnut_list where doughnut_price = 1 ORDER BY doughnut_name;</example>
+    <example>Select doughnut_name FROM doughnut_list where doughnut_price = 1 ORDER BY doughnut_name,doughut_price,doughnut_create DESC;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      FUNCTIONS
+    </Command>
+    <Descriptions>
+      SUM, AVG - GROUP BY, MIN, MAX, COUNT, LIMIT
+    </Descriptions>
+
+    <example>Select COUNT(doughnut_create) FROM doughnut_list ;</example>
+    <example>Select AVG(doughnut_price) FROM doughnut_list GROUP BY doughnut_name;</example>
+    <example>Select COUNT(DISTINCT doughnut_create) FROM doughnut_list;</example>
+    <example>Select COUNT(DISTINCT doughnut_create) FROM doughnut_list LIMIT 3;</example>
+    <example>Select COUNT(DISTINCT doughnut_create) FROM doughnut_list LIMIT 2,3;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      Definition of Foreign Key
+    </Command>
+    <Descriptions>
+      Foreign key is a column in a table that references the primary key of another table
+    </Descriptions>
+
+    <example>Primary key used by a foreign key is known as parent key</example>
+    <example>Foreign key don't have to be unique;</example>
+    <example>Foreign key can be NULL;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      CREATE TABLE
+    </Command>
+    <Descriptions>
+      create a table with constraint
+    </Descriptions>
+
+    <example>CREATE TABLE doughnut_color( doughnut_color_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,  CONSTRAINT doughnut_list_doughnut_id_fk FOREIGN KEY (doughnut_id) REFERENCES doughnut_list (doughnut_id); )</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      Definition of 1NF
+    </Command>
+    <Descriptions>
+      Columns only contain atomic values, and no repeating groups of data permitted in a column
+    </Descriptions>
+
+
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      Definition of 2NF
+    </Command>
+    <Descriptions>
+      Table must be in 1NF and no partial functional dependencies
+    </Descriptions>
+
+
+
+
+    <SQL>
+      <Command>
+        Definition of 3NF
+      </Command>
+      <Descriptions>
+        Table must be in 2NF and no transitive dependencies
+      </Descriptions>
+
+
+
+    </SQL>
+  </SQL>
+
+  <SQL>
+    <Command>
+      CREATE SELECT N INSERT
+    </Command>
+    <Descriptions>
+      CREATE SELECT N INSERT at same time
+    </Descriptions>
+
+    <example>CREATE TABLE profession( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,  profession VARCHAR(20)) ; INSERT INTO profession (profession) SELECT profession FROM my_contacts GROUP BY profession ORDER BY profesion;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      CREATE TABLE with SELECT then ALTER to add primary key
+    </Command>
+    <Descriptions>
+      CREATE TABLE with SELECT then ALTER
+    </Descriptions>
+
+    <example>CREATE TABLE profession AS SELECT profession FROM my_contacts GROUP BY profession ORDER BY profesion; ALTER Table profession ADD COLUMN id INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY(id);</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      CREATE SELECT INSERT
+    </Command>
+    <Descriptions>
+      CREATE SELECT INSERT at the same time
+    </Descriptions>
+
+    <example>CREATE TABLE profession( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, profession VARCHAR(20) ) AS SELECT profession FROM my_contacts GROUP BY profession ORDER BY profesion; </example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      Cartesian join, Cartesian product, Cross join, Cross product, No join
+    </Command>
+    <Descriptions>
+      Return every rows from one table crossed with every rows from second
+    </Descriptions>
+
+    <example>SELECT t.toy, b.boy FROM toys AS t CROSS JOIN boys AS b;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      INNER JOIN
+    </Command>
+    <Descriptions>
+      CROSS JOIN with some result rows removed by a condition in a query
+    </Descriptions>
+
+    <example>SELECT mc.first_name, mc.last_name, p.profession FROM my_contacts AS mc INNER JOIN profession AS p ON mc.contact_id = p.prof_id ;</example>
+    <example>SELECT t.toy, b.boy FROM toys AS t INNER JOIN boys AS b on t.toy_id ltgt b.toy_id ;</example>
+    <example>SELECT t.toy, b.boy FROM toys AS t NATURAL JOIN boys AS b;</example>
+    <example>SELECT mc.first_name,mc.last_name,jc.title FROM my_contacts AS mc NATURAL JOIN job_current AS jc WHERE jc.title IN ( SELECT title FROM job_listing); </example>
+    <example>SELECT mc.first_name,mc.last_name,(SELECT state FROM zip_code where mc.zip_code = zip_code) AS state FROM my_contacts as mc;</example>
+    <example>SELECT mc.first_name,mc.last_name,mc.email FROM my_contacts AS mc WHERE EXISTS (SELECT * FROM contact_interests ci WHERE mc.contact_id = ci.contact_id); </example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      LEFT OUTER JOIN
+    </Command>
+    <Descriptions>
+      Takes all the rows in the left and matcheds them to the rows on the right table
+    </Descriptions>
+
+    <example>SELECT g.girl, t.toy FROM girls g LEFT OUTER JOIN toys t on g.toy_id = t.toy_id; </example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      UNION
+    </Command>
+    <Descriptions>
+      Combines two or more queries into one table, UNION ALL show duplicates
+    </Descriptions>
+
+    <example>SELECT title FROM job_current UNION SELECT title FROM job_desired UNION SELECT title from job_listings ORDER by title; </example>
+    <example>CREATE TABLE my_union AS SELECT title FROM job_current UNION SELECT title FROM job_desired UNION SELECT title from job_listings ORDER by title; </example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      INTERSECT, EXCEPT
+    </Command>
+    <Descriptions>
+      INTERSECT returns only the columns that are in the first query and also in the second query, Except returns only the columns that are in the first query but not in second query
+    </Descriptions>
+
+    <example>SELECT title FROM job_current UNION SELECT title FROM job_desired UNION SELECT title from job_listings ORDER by title; </example>
+    <example>CREATE TABLE my_union AS SELECT title FROM job_current UNION SELECT title FROM job_desired UNION SELECT title from job_listings ORDER by title; </example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      Constraint CHECK
+    </Command>
+    <Descriptions>
+      A restriction what you can insert into a column
+    </Descriptions>
+
+    <example>CREATE TABLE piggy_bank(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, coin CHAR(1) CHECK(coin IN('P','D','Q')) ); </example>
+    <example>ALTER TABLE my_contacts ADD CONSTRAINT CHECK gender IN('M','F') ; </example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      CREATE VIEW
+    </Command>
+    <Descriptions>
+      Save a query so you don't have to repeat typing it
+    </Descriptions>
+
+    <example>CREATE VIEW tech_writer_jobs AS SELECT title, salary,description,zip FROM job_listings WHERE title='Technical Writer' ; </example>
+    <example>SELECT * FROM tech_writer_jobs;</example>
+    <example>DROP VIEW tech_writer_jobs;</example>
+
+  </SQL>
+
+  <SQL>
+    <Command>
+      Transaction
+    </Command>
+    <Descriptions>
+      A set of SQL statements that accomplish a single unit of work, if all the steps can't be completed without interference, none of them should be completed
+    </Descriptions>
+
+    <example>START TRANSACTION; </example>
+    <example>COMMIT;</example>
+    <example>ROLLBACK;</example>
+
+  </SQL>
+</SQLS>

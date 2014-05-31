@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Respiratory"  description="Respiratory">
+
+    <siteMapNode  title="Respiratory Calculator"  description="Respiratory Stuffs." >
+      <siteMapNode  title="Arterial blood gases"  description="Arterial blood gases equations">
+        <siteMapNode  title="Alveolar Air Equation"  description="PAO2" url="~/Respiratory/Respiratory.aspx?id=PAO2"/>
+        <siteMapNode  title="A-a Gradient"  description="A-aDO2" url="~/Respiratory/Respiratory.aspx?id=A-aDO2"/>
+        <siteMapNode  title="Arterial Oxygen Content"  description="CaO2" url="~/Respiratory/Respiratory.aspx?id=CaO2"/>
+        <siteMapNode  title="Mixed Venous Oxygen Content"  description="CvO2" url="~/Respiratory/Respiratory.aspx?id=CvO2"/>
+        <siteMapNode  title="Arterial-Venous Oxygen Content Difference"  description="C(a-v)O2" url="~//Respiratory/Respiratory.aspx?id=C(a-v)O2"/>
+        <siteMapNode  title="Cardiac Output"  description="QT" url="~/Respiratory/Respiratory.aspx?id=Qt"/>
+        <siteMapNode  title="Shunt Equation"  description="QS/QT" url="~/Respiratory/Respiratory.aspx?id=Qs/Qt"/>
+        <siteMapNode  title="Artieral Oxygen saturation"  description="SaO2" />
+        <siteMapNode  title="DeadSpace to tidal volume ratio"  description="VD/VT" url="~/Respiratory/Respiratory.aspx?id=Vd/Vt"/>
+        <siteMapNode  title="Oxygen Consumption"  description="VO2" />
+      </siteMapNode>
+
+      <siteMapNode  title="Hemodynamics"  description="Hemodynamics equations" >
+        <siteMapNode  title="Mean Arterial Pressure"  description="MAP" />
+        <siteMapNode  title="Cardiac Output-Fick"  description="QT" />
+        <siteMapNode  title="Cardiac Output"  description="QT" />
+        <siteMapNode  title="Cardiac index"  description="CI" />
+        <siteMapNode  title="Pulse pressure"  description="Pulse pressure" />
+        <siteMapNode  title="Stroke Volume"  description="Stroke volume" />
+        <siteMapNode  title="Ejection fraction"  description="Ejection fraction" />
+        <siteMapNode  title="Systemic vascular resistance"  description="SVR" />
+        <siteMapNode  title="Pulmonary vascular resistance"  description="PVR" />
+        <siteMapNode  title="Oxygen Consumption"  description="VO2" />
+      </siteMapNode>
+
+      <siteMapNode  title="Mechanical Ventilation"  description="Mechanical Ventilation equations">
+        <siteMapNode  title="Alveolar ventilation"  description="VA" />
+        <siteMapNode  title="Dynamic Compliance"  description="Dynamic Compliance" />
+        <siteMapNode  title="Static Compliance"  description="Static Compliance" />
+        <siteMapNode  title="Airway Resistance"  description="Raw" />
+      </siteMapNode>
+
+      <siteMapNode  title="Equipment"  description="Equipment equations" >
+        <siteMapNode  title="Duration of FLow"  description="How long your oxygen tank last per flow" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Respiratory/Respiratory.aspx?id=analyzerABG" title="ABG Analyzer"  description="Respiratory ABG." />
+    <siteMapNode url="~/Respiratory/Respiratory.aspx?id=VentilatorAssistant" title="Ventilator Settings"  description="Ventilator Settings Assistant." />
+  </siteMapNode>
+</siteMap>

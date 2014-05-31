@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Drugs>  
+  <Synthetic_Azole>
+    <fluconazole>
+      <Brand>Diflucan</Brand>
+      <Action>Alters cellular membrane, increasing permeability and leakage of essential elements needed for fungal growth. At higher concentrations, may be fungicidal.</Action>
+      <Therapeutic>Systemic antifungal</Therapeutic>
+      <Indication>Oropharyngeal+Esophageal+Systemic+Vaginal candidiasis, Cryptococcal meningitis, Suppression of cryptococcal meningitis in patients with AIDS, To prevent candidiasis after bone marrow transplantation</Indication>
+    </fluconazole>
+  </Synthetic_Azole>
+  
+  <Fluoroquinolone>
+    <levofloxacin>
+      <Brand>Levaquin</Brand>
+      <Action>Inhibits the enzyme DNA gyrase in susceptible gram-negative and gram-positive aerobic and anaerobic bacteria, interfering with bacterial DNA synthesis</Action>
+      <Therapeutic>Anti-infective</Therapeutic>
+      <Indication>Acute bacterial exacerbation of chronic bronchitis, Community-acquired pneumonia, Nosocomial pneumonia caused by methicillin-susceptible strains of Staphylococcus, Acute maxillary sinusitis, Uncomplicated skin and skin-structure infections, Complicated urinary tract infections; acute pyelonephritis caused by E. coli, Uncomplicated urinary tract infections, Chronic bacterial prostatitis, Conjunctivitis, Corneal ulcers</Indication>
+    </levofloxacin>
+  </Fluoroquinolone>
+  
+  <DNase>
+    <Dornase_Alplha>
+      <Brand>Pulmozyme</Brand>
+      <Action>Selectively cleaves to DNA in sputum, decreasing viscosity of pulmonary secretions</Action>
+      <Therapeutic>Cystic fibrosis agent, mucolytic enzyme, respiratory inhalant</Therapeutic>
+      <Indication>Cystic Fibrosis</Indication>
+    </Dornase_Alplha>
+  </DNase>
+
+  <Anticholinergic>
+    <ipratropium_bromide>
+      <Brand>Atrovent</Brand>
+      <Action>Inhibits cholinergic receptors in bronchial smooth muscle, decreasing level of cyclic guanosine monophosphate and dilating bronchioles. When used locally, inhibits secretions from glands lining the nasal mucosa.</Action>
+      <Therapeutic> Allergy, cold, and cough remedy; bronchodilator</Therapeutic>
+      <Indication>Chronic obstructive pulmonary disease, bronchospasm, asthma, perennial rhinitis, common cold</Indication>
+    </ipratropium_bromide>
+
+    <Atropine>
+      <Atropine>
+        <Brand>Atropine</Brand>
+        <Action>anticholinergic or antiparasympathetic or antimuscarinic agent.  Atropine dilates the pupils, increases heart rate, and reduces salivation and other secretions</Action>
+        <Therapeutic>Antimuscarinic agent</Therapeutic>
+        <Indication>An antisialogogue for preanesthetic medication to prevent or reduce secretions of the respiratory tract, to restore cardiac rate and arterial pressure during anesthesia when vagal stimulation produced by intra-abdominal surgical traction causes a sudden decrease in pulse rate and cardiac action, to lessen the degree of atrioventricular (A-V) heart block when increased vagal tone is a major factor in the conduction defect as in some cases due to digitalis, to overcome severe bradycardia and syncope due to a hyperactive carotid sinus reflex, as an antidote (with external cardiac massage) for cardiovascular collapse from the injudicious use of a choline ester (cholinergic) drug, in the treatment of anticholinesterase poisoning from organophosphorus insecticides, and as an antidote for the “rapid” type of mushroom poisoning due to the presence of the alkaloid, muscarine, in certain species of fungus such as Amanita muscaria.</Indication>
+      </Atropine>
+    </Atropine>
+  </Anticholinergic>
+
+  <Neuromuscular_Blocker>
+    <rocuronium>
+      <Brand>Norcuronium</Brand>
+      <Action>An aminosteroid non-depolarizing (that is, it does not cause initial stimulation of muscles before weakening them) neuromuscular blocker or muscle relaxant.  It works by blocking the signals between your nerves and your muscles.</Action>
+      <Therapeutic>Used in modern anaesthesia, to facilitate endotracheal intubation and to provide skeletal muscle relaxation during surgery or mechanical ventilation.</Therapeutic>
+      <Indication>General anaesthesia, intubation</Indication>
+    </rocuronium>
+  </Neuromuscular_Blocker>
+
+  <Vasodilator>
+    <nitroprusside>
+      <Brand>Nipride</Brand>
+      <Action>Interferes with calcium influx and intracellular activation of calcium, causing peripheral vasodilation and direct blood pressure decrease.</Action>
+      <Therapeutic>Antihypertensive</Therapeutic>
+      <Indication>Hypertensive emergencies; controlled hypotension during anesthesia</Indication>
+    </nitroprusside>
+  </Vasodilator>
+
+  <Proton_Pump_Inhibitor>
+    <pantoprazole>
+      <Brand>Protonix</Brand>
+      <Action>Reduces gastric acid secretion and increases gastric mucus and bicarbonate production, creating protective coating on gastric mucosa.</Action>
+      <Therapeutic>GI agent</Therapeutic>
+      <Indication>Erosive esophagitis caused by gastroesophageal reflux disease (GERD), Pathologic hypersecretory conditions</Indication>
+    </pantoprazole>
+  </Proton_Pump_Inhibitor>
+
+  <Benzodiazepine>
+    <lorazepam>
+      <Brand>Ativan</Brand>
+      <Action>Benzodiazepines possess sedative, hypnotic, anxiolytic, anticonvulsant, muscle relaxant, and amnesic actions.</Action>
+      <Therapeutic>Antianxiety agent</Therapeutic>
+      <Indiation>Ativan is used to treat anxiety disorders.</Indiation>
+    </lorazepam>
+
+    <midazolam>
+      <Brand>Versed</Brand>
+      <Action>Benzodiazepines possess sedative, hypnotic, anxiolytic, anticonvulsant, muscle relaxant, and amnesic actions.</Action>
+      <Therapeutic>Sedation and induction of anesthesia</Therapeutic>
+      <Indiation>Midazolam is used to sedate a person who is having a minor surgery, dental work, or other medical procedure.</Indiation>
+    </midazolam>
+
+    <diazepam>
+      <Brand>Valium</Brand>
+      <Action>Benzodiazepines possess sedative, hypnotic, anxiolytic, anticonvulsant, muscle relaxant, and amnesic actions.</Action>
+      <Therapeutic> Treatment of anxiety and tension and as a sedative, muscle relaxant, and anticonvulsant.</Therapeutic>
+      <Indiation>For the management of anxiety disorders or for the short-term relief of the symptoms of anxiety, in acute alcohol withdrawal, useful in the symptomatic relief of acute agitation, tremor, impending or acute delirium tremens and hallucinosis, useful adjunct for the relief of skeletal muscle spasm due to reflex spasm to local pathology , spasticity caused by upper motor neuron disorders , athetosis, and stiff-man syndrome.</Indiation>
+    </diazepam>
+  </Benzodiazepine>
+
+  <Butyrophenone>
+    <haloperidol>
+      <Brand>Hadol</Brand>
+      <Action>Unknown. Thought to block postsynaptic dopamine receptors in brain and increase dopamine turnover rate, inhibiting signs and symptoms of psychosis.</Action>
+      <Therapeutic>Antipsychotic</Therapeutic>
+      <Indication>It is prescribed in the treatment of schizophrenia, in the control of tics and verbal utterance of Tourette's syndrome, in the treatment of severe behavioral problems in children, and as a sleep aid.</Indication>
+    </haloperidol>
+  </Butyrophenone>
+  <Sympathomimetic_amine>
+    <norepinephrine>
+      <Brand>Levophed</Brand>
+      <Action>It works by constricting (narrowing) the blood vessels and increasing blood pressure and blood glucose (sugar) levels.</Action>
+      <Therapeutic>Peripheral vasoconstrictor, inotropic stimulator of the heart and dilator of coronary arteries</Therapeutic>
+      <Indication>Norepinephrine is used to treat life-threatening low blood pressure (hypotension) that can occur with certain medical conditions or surgical procedures. This medication is often used during CPR.</Indication>
+    </norepinephrine>
+  </Sympathomimetic_amine>
+  <Opioid_antagonist>
+    <Naloxone>
+      <Brand>Narcan</Brand>
+      <Action>Synthetic congener of oxymorphone</Action>
+      <Therapeutic>Narcotic antagonist</Therapeutic>
+      <Indication>Complete or Partial Reversal of Opioid Depression</Indication>
+    </Naloxone>
+  </Opioid_antagonist>
+  <IV-sedative-hypnotic-agent>
+    <Propofol>
+      <Brand>Diprivan</Brand>
+      <Action>USP is a sterile, nonpyrogenic emulsion.</Action>
+      <Therapeutic>Induction of anesthesia</Therapeutic>
+      <Indication>To sedate individuals who are receiving mechanical ventilation, induction of anesthesia, during monitored anesthesia care (MAC) sedation</Indication>
+    </Propofol>
+  </IV-sedative-hypnotic-agent>
+  <prostaglandin >
+    <Epoprostenol >
+      <Brand>Flolan</Brand>
+      <Action>direct vasodilation of pulmonary and systemic arterial vascular beds, and inhibition of platelet aggregation</Action>
+      <Therapeutic>As a vasodilator in severe Raynaud's phenomenon or ischemia of a limb, in pulmonary hypertension, in primary pulmonary hypertension (PPH)</Therapeutic>
+      <Indication>For the treatment of pulmonary arterial hypertension to improve exercise capacity.</Indication>
+    </Epoprostenol >
+  </prostaglandin >
+  <Opium>
+    <Duramorph >
+      <Brand>Morphine</Brand>
+      <Action>Morphine appears to mimic endorphins. Endorphins, a contraction of the term endogenous morphines, are responsible for analgesia (reducing pain), causing sleepiness, and feelings of pleasure.</Action>
+      <Therapeutic>narcotic analgesic</Therapeutic>
+      <Indication>It is used for the management of pain not responsive to non-narcotic analgesics.</Indication>
+    </Duramorph >
+
+    <hydromorphone>
+      <Brand>Dilaudid</Brand>
+      <Action>Binds to opiate receptors in spinal cord and CNS, altering perception of and response to painful stimuli while producing generalized CNS depression. Also subdues cough reflex and decreases GI motility.</Action>
+      <Therapeutic>Opioid analgesic, antitussivec</Therapeutic>
+      <Indication>Moderate to severe pain.</Indication>
+    </hydromorphone>
+
+    <sublimaze>
+      <Brand>Fentanyl</Brand>
+      <Action>Producing anesthesia for surgery and treating pain before, during, and after surgery.</Action>
+      <Therapeutic>narcotic analgesic</Therapeutic>
+      <Indication>For analgesic action of short duration during the anesthetic periods, premedication, induction and maintenance, and in the immediate postoperative period (recovery room) as the need arises, for use as a narcotic analgesic supplement in general or regional anesthesia, for administration with a neuroleptic as an anesthetic premedication, for the induction of anesthesia and as an adjunct in the maintenance of general and regional anesthesia, For use as an anesthetic agent with oxygen in selected high risk patients, such as those undergoing open heart surgery or certain complicated neurological or orthopedic procedures.</Indication>
+    </sublimaze>
+  </Opium>
+  <Loop-Diuretic>
+    <Furosemide>
+      <Brand>Lasix</Brand>
+      <Action>Loop Diuretic</Action>
+      <Therapeutic>Edema, Hypertension</Therapeutic>
+      <Indication>Used in the treatment of congestive heart failure and edema.</Indication>
+    </Furosemide>
+  </Loop-Diuretic>
+  <catecholamine>
+    <adrenalin>
+      <Brand>epinephrine</Brand>
+      <Action>Increase in heart rate, blood pressure, and respiratory rate. Epinephrine also raises glucose levels in the blood for use as fuel when more alertness or greater physical effort is needed.</Action>
+      <Therapeutic>sympathomimetic</Therapeutic>
+      <Indication>Used to treat a number of conditions including: cardiac arrest, anaphylaxis, and superficial bleeding. It has been used historically for bronchospasm and hypoglycemia, but newer treatments for these, such as salbutamol, a synthetic epinephrine derivative, and dextrose, respectively, are currently preferred.</Indication>
+    </adrenalin>
+  </catecholamine>
+  <Glucocorticoid>
+    <methylprednisolone>
+      <Brand>Medrol</Brand>
+      <Action>Reduces inflammation and prevents edema by stabilizing membranes and reducing permeability of leukocytic cells. Suppresses immune system by interfering with antigen-antibody interactions of macrophages and T cells.</Action>
+      <Therapeutic>Antiasthmatic, anti-inflammatory (steroidal), immunosuppressant</Therapeutic>
+      <Indication>
+        Diseases and disorders of endocrine system, collagen, skin, eye, GI tract, respiratory system, or hematologic system; neoplastic diseases; allergies; edema; multiple sclerosis; tuberculous meningitis; trichinosis; rheumatic disorders; osteoarthritis; bursitis; localized inflammatory lesions, Lupus nephritis, Pneumocystis jiroveci pneumonia in AIDS patients.</Indication>
+    </methylprednisolone>
+  </Glucocorticoid>
+  <Platelet_Inhibitor>
+    <Clopidogrel >
+      <Brand>Plavix</Brand>
+      <Action>Keeps the platelets in your blood from coagulating (clotting) to prevent unwanted blood clots that can occur with certain heart or blood vessel conditions.</Action>
+      <Therapeutic>Platelet Inhibitor</Therapeutic>
+      <Indication>Used to prevent blood clots after a recent heart attack or stroke, and in people with certain disorders of the heart or blood vessels.</Indication>
+    </Clopidogrel >
+  </Platelet_Inhibitor>
+  <anticoagulant>
+    <Enoxaparin >
+      <Brand>Lovenox</Brand>
+      <Action>Enoxaparin binds to and accelerates the activity of antithrombin III. By activating antithrombin III, enoxaparin preferentially potentiates the inhibition of coagulation factors Xa and IIa.</Action>
+      <Therapeutic>heparin, blood thinner</Therapeutic>
+      <Indication>Prophylaxis of DVT in medically ill patient, Total hip & knee replacement, Extended hip-replacement, Abdominal surgery, Treatment of DVT with or with out PE inpatient and Treatment of DVT inpatient, with ACS, including STEMI.</Indication>
+    </Enoxaparin >
+
+    <Warfarin  >
+      <Brand>Coumadin</Brand>
+      <Action>Reduces the formation of blood clots.</Action>
+      <Therapeutic>blood thinner</Therapeutic>
+      <Indication>Used to prevent heart attacks, strokes, and blood clots in veins and arteries.</Indication>
+    </Warfarin  >
+  </anticoagulant>
+  <tissue_plasminogen_activator>
+    <alteplase >
+      <Brand>Altivase </Brand>
+      <Action>It works by helping to break down unwanted blood clots.</Action>
+      <Therapeutic>Aids in dissolution of blood clots</Therapeutic>
+      <Indication>Lysis of thrombi in management of acute MI or acute massive pulmonary embolism, management of acute ischemic stroke. Restoring function to central venous access devices that have become clogged with clotted blood.</Indication>
+    </alteplase >
+  </tissue_plasminogen_activator>
+
+
+
+</Drugs>
+<!--References from http://medical-dictionary.thefreedictionary.com -->
+<!--References from http://www.drugs.com/ -->
+<!--References from http://www.rxlist.com/-->
